@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "vega": "^4.2.0",
+    "vega-embed": "^3.20.0",
+    "vega-lite": "^3.0.0-rc6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,6 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-
   "proxy": "http://localhost:3001"
 }

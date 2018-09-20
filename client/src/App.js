@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 class App extends Component {
-  state = {users: []}
+ 
+ state={
+  
+ }
 
   componentDidMount() {
-    fetch('/users')
-      .then(res => res.json())
-      .then(users => this.setState({ users }));
+
+    
   }
 
   render() {
     return (
       <div className="App">
-        <h1>Users</h1>
-        {this.state.users.map(user =>
-          <div key={user.id}>{user.username}</div>
-        )}
+     <textarea
+     cols="40"
+     rows='20'
+     ref={(div)=>this.divTarget=div}>
+     soy un div</textarea>
+     <button onClick={() =>{
+
+      var obj={
+        "x": "jhon",
+        "y": {"field": "Also Jhon", "type": "quantitative"}
+      };
+      this.divTarget.value=JSON.stringify(obj,null,2);
+     }}>Cambialo</button>
+
+      <div id='vis'>
+        <data/>'
       </div>
+     </div>
     );
   }
 }

@@ -103,7 +103,7 @@ class App extends Component {
     let date = new Date();
     let name = prompt('enter name');
     let title = prompt('enter a title for vizualisation')
-    return fetch('https://blooming-caverns-47026.herokuapp.com/viz/', {
+    return fetch('https://tranquil-peak-36320.herokuapp.com/viz', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
